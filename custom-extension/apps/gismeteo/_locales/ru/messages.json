@@ -1,0 +1,9 @@
+{
+   "description_ext": {
+      "description": "description_extension",
+      "message": "Прогноз погоды от Гисметео. Текущая погода и детальный прогноз по всему миру."
+   },
+   "lang": {
+      "message": "ru"
+   }
+}

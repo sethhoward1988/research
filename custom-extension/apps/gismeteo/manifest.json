@@ -1,0 +1,24 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "favicon-16.png",
+      "default_popup": "popup.html"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "ru",
+   "description": "__MSG_description_ext__",
+   "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDfbPoa90lW+rdSyiwlG7wRRXh7Ej3/YAPb0OiLchu0PVWO0jEIowuc+cIVWpiccQW+xXRRRD5of9L6I6mfIR+XXhY7ZW4tpKd9JgOUvwjOmI85QykkhjN7uX1Fzdcc8qr24lrea7lGR9IjSr0np3QAzOPvjtvdJi6oUX2AgfCclQIDAQAB",
+   "manifest_version": 2,
+   "name": "Gismeteo",
+   "options_page": "options.html",
+   "permissions": [ "http://554838a8.services.gismeteo.ru/inform-service/", "http://www.gismeteo.ru/news/rss/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.3",
+   "web_accessible_resources": [ "favicon-16.png" ]
+}

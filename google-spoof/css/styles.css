@@ -1,0 +1,258 @@
+
+body {
+    margin: 0;
+    font-family: arial,sans-serif;
+}
+
+.hidden {
+    display: none!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left, .right {
+    display: inline-block;
+}
+
+.left {
+    width: 544px;
+    padding-left: 17px;
+    border-bottom: 1px solid #ededed;
+}
+
+.right {
+    width: 270px;
+}
+
+header {
+    height: 60px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-image: url('iconsSmallSprite.png');
+    background-position: -3 -45;
+    width: 90px;
+    height: 33px;
+}
+
+.content {
+    width: 900px;
+    margin-left: 120px;
+}
+
+.search-bar {
+    position: absolute;
+    left: 125px;
+    top: 15px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    min-width: 450px;
+    outline: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.search-bar:focus {
+    border: 1px solid #4285f4;
+    outline: 0;
+}
+
+.second-bar {
+    height: 58px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.second-bar ul {
+    margin: 0;
+    margin-left: 121px;
+    padding: 0;
+}
+
+.second-bar ul li {
+    margin: 0 8px;
+    padding: 0 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.second-bar ul li:first-child {
+    border-bottom: 3px solid #dd4b39;
+}
+
+.second-bar ul li:first-child a {
+    color: #dd4b39;
+    font-weight: bold;
+}
+
+.second-bar ul li a {
+    line-height: 55px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #777777;
+}
+
+.result-stats {
+    color: rgba(0,0,0,0.5) !important;
+    font-size: 13px;
+    line-height: 58px;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/*Results*/
+
+.title a{
+    color: #1e0fbe;
+    font-size: 18px!important
+}
+
+.url {
+    color: #006621;
+    font-size: 13px;
+}
+
+.description {
+    color: #545454;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+.result {
+    margin-bottom: 23px;
+}
+
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    height: 40px;
+}
+
+footer .content {
+    margin-left: 135px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding-right: 27px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+    padding-right: 27px;
+}
+
+footer ul li a {
+    color: #86827a;
+    line-height: 40px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+/*Google More Links*/
+
+.more-pages {
+    height: 56px;
+    width: 400px;
+    margin: 30px auto;
+}
+
+.more-pages ul {
+    padding: 0;
+    margin: 0;
+}
+
+.more-pages ul li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-right: -4px;
+    font-size: 13px;
+}
+
+.more-pages ul li a {
+    font-size: 13px;
+}
+
+.arrow-left {
+    background-image: url('iconsSmallSprite.png');
+    background-position: 0 -8;
+    width: 12px;
+    height: 20px;
+    margin-left: 27px;
+    margin-top: 7px;
+    margin-bottom: 13px;
+}
+
+.arrow-right {
+    background-image: url('iconsSmallSprite.png');
+    background-position: 12 -8;
+    width: 12px;
+    height: 20px;
+    margin-left: 7px;
+    margin-top: 7px;
+    margin-bottom: 13px;
+}
+
+.g {
+    background-image: url('iconsSmallSprite.png');
+    background-position: -24 0;
+    width: 30px;
+    height: 30px;
+}
+
+.o {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url('iconsSmallSprite.png');
+    background-position: -75 -10;
+    width: 20px;
+    height: 20px;
+}
+
+.o.active {
+    background-position: -54 -10;
+}
+
+.gle {
+    background-image: url('iconsSmallSprite.png');
+    background-position: -95 -1;
+    width: 47px;
+    height: 38px;
+}
+

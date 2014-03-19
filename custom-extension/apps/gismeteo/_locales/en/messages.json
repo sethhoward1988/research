@@ -1,0 +1,9 @@
+{
+   "description_ext": {
+      "description": "description_extension",
+      "message": "Gismeteo Weather Forecast. Real time weather and detailed forecast all round the world"
+   },
+   "lang": {
+      "message": "en"
+   }
+}

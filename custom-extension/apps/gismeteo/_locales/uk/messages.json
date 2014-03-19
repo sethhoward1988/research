@@ -1,0 +1,9 @@
+{
+   "description_ext": {
+      "description": "description_extension",
+      "message": "Прогноз погоди від Гісметео. Поточна погода і детальний прогноз по всьому світу."
+   },
+   "lang": {
+      "message": "uk"
+   }
+}

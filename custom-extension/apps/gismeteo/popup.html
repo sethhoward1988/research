@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="ru">
+	<title>Расширение Gismeteo</title>
+	<link type="text/css" rel="stylesheet" href="styles/main.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/render.js"></script>				
+</head>
+	<body>
+	<div class="weather-block-cnt border-none hide">
+		<div class="preloader {preloader_color}" style="top: {preloader_top}"></div>
+		<div class="weather-block {colorSheme}">			
+			<a class="close" href="#close"></a>		
+			<a class="options" href="#options"></a>							
+			<div class="content">				
+				<div class="grad-top"></div>			
+				<div class="menu-today">
+					<a class="refresh" href="#refresh">					
+						<span>{timeAfter}</span>
+					</a>
+					<ul class="menu">
+						{city0}
+						{city1}
+						{city2}
+						{city3}
+						{city4}
+						{news_a}																						
+					</ul>				
+					
+					<div class="news" style="display: {news_show}">
+						<div class="contents">
+							<ul>
+								{n0}
+								{n1}
+								{n2}
+								{n3}
+								{n4}	
+								{n5}
+								{n6}
+								{n7}
+								{n8}
+								{n9}
+								{n10}
+							</ul>																																										
+						</div>
+					</div>					
+					<div class="today" style="display: {today_show};">
+						<div class="day-time">{currentDateTime}</div>
+						<div class="details">
+							<div class="temp">
+								<div class="main">{plus_fact}{t_fact}<span class="tsp">&nbsp;</span>&deg{sign_fact}</div>
+								<div class="comform"><span class="param">&nbsp;{plus_feels_fact}{t_feels_fact}</span>&nbsp;<span class="text">{feels_fact}</span></div>
+							</div>
+							<div class="props">
+								<ul>
+									<li class="pressure">{press_fact} {press_descript_fact}</li>
+									<li class="humidity">{hum_fact}<span class="tsp">&nbsp;</span>% {hum_descript_fact}</li>
+									<li class="wind" style="background-image: url(/images/icons/wind/icon-wind-{wind_dir_fact}.png); background-position: 0px 50%; background-repeat: no-repeat no-repeat;">{ws_fact} {ws_descript_fact} {wd_descript_fact}</li>
+								</ul>
+							</div>
+							<div class="image"><img src="/images/icons/{imgtype}/fact/{pict_fact}.png" alt="{description_fact}" title="{description_fact}"></div>
+						</div>
+						<div class="conditions">{description_fact}</div>				
+					</div>
+					<div class="grad-bottom" style="top: 89px;"></div>					
+				</div>
+				<div class="forecast" style="display: {forecast_show};">
+					<fieldset class="today {visibility_today}">
+						<legend align="center">{now}</legend>	
+						{now0}
+						{now1}
+						{now2}	
+						{now3}																																																					
+					</fieldset>
+					<fieldset class="tomorrow {visibility_tomorrow}">
+						<legend align="center">{tomorrow}</legend>
+						{tomorrow0}
+						{tomorrow1}
+						{tomorrow2}	
+						{tomorrow3}	
+					</fieldset>													
+				</div>
+			</div>
+			<div class="foot">
+				<a class="logo" href="#" data='{mainurl}'>
+					<img src="images/logo-small.png" alt="" title="">
+					<span>{weather_forecast}</span>
+				</a>
+				<ul class="foot-menu">{foot_menu}</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="forecast_content" style="display: none;">
+		<div class="info info-sun info1 {last}" style="background-color:{color};">
+			<div class="daytime">{tod_forecast}</div>
+			<div class="temp" style="background: url(/images/icons/{imgtype}/{pict_forecast}.png) no-repeat 43px -5px;">
+				<div class="main">{plus_forecast}{t_forecast}</div>
+				<div class="comfort"><span>{plus_feels_forecast}{t_feels_forecast}</span></div>
+			</div>
+			<div class="conditions"><span>{description_forecast}</span></div>
+			<div class="props" style="{display_props}">
+				<ul>
+					<li class="pressure">{press_forecast}</li>
+					<li class="humidity">{hum_forecast}<span class="tsp">&nbsp;</span>%</li>
+					<li style="background: url(/images/icons/wind/icon-wind-{wind_dir_forecast}.png) no-repeat 0 50%;">{ws_forecast} {ws_descript_forecast} {wd_descript_forecast}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="news_content" style="display: none;">
+		<li class="item links-black">
+			<table width="100%">
+				<td width="80">{news_img}</td>
+				<td style="vertical-align: top;"><a href="#" data="{news_link}">{news_title}</a><br/>{news_descript}</td>
+			</table>			
+		</li>
+	</div>
+	
+	<div class="forecast_foot_menu" style="display: none;">
+		<li style="padding-right: 22px"><a href="#" data='{mainurl}/city/busy/{id}?from={from}'>{busy}</a></li>
+		<li style="padding-right: 22px"><a href="#" data='{mainurl}/city/daily/{id}?from={from}'>{d3}</a></li>
+		<li style="padding-right: 22px"><a href="#" data='{mainurl}/city/daily/{id}/4?from={from}'>{d7}</a></li>
+		<li style="padding-right: 22px"><a href="#" data='{mainurl}/city/weekly/{id}?from={from}'>{w2}</a></li>		
+	</div>
+	
+	<div class="news_foot_menu" style="display: none;">
+		<li><a href="#" data='{mainurl}/news/stihiynye-yavleniya/?from=chrome'>Стихийные явления</a></li>
+		<li><a href="#" data='{mainurl}/news/proisshestviya/?from=chrome'>Происшествия</a></li>
+		<li><a href="#" data='{mainurl}/news/klimat/?from=chrome'>Климат</a></li>
+		<li><a href="#" data='{mainurl}/news/sobytiya/?from=chrome'>События</a></li>		
+	</div>	
+</body>
+</html>

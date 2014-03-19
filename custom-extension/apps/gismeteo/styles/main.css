@@ -1,0 +1,411 @@
+@import 'reset.css';
+
+body, input, textarea, select { font: 13px/1.3em 'Trebuchet MS', Sans-Serif; }
+
+body {overflow: hidden;}
+
+body.conf {
+	overflow: auto;
+}
+
+body.conf {
+	color: black; background: white url(/apps/gismeteo/images/body-bg.png) repeat-x;
+	padding: 21px 0 0 20px;
+}
+
+body.conf .page { width: 980px; margin: auto; }
+
+body.text { padding: 40px 300px; }
+
+h1 { margin: 15px 0; font-size: 2em; line-height: 1.2em; font-weight: normal; color: black; }
+h2 { margin: 10px 0; font-size: 1.30769em; font-style: italic; line-height: 1.1em; font-weight: normal; }
+
+a { color: #004499;}
+a:hover, a.active { color: #cc0000; }
+p { margin: 15px 0; }
+
+
+#head { overflow: hidden; }
+#head .logo { float: left; text-decoration: none; position: relative; }
+#head .logo span { position: absolute; bottom: 10px; right: 1px; color: #424255; }
+#head .menu { float: left; margin: 10px 0 0 45px; font-size: 1.0769em; }
+#head .menu li { float: left; margin-right: 20px; padding: 2px 7px; }
+#head .menu li a { display: block; padding: 1px; background: url(/apps/gismeteo/images/link-underline.png) repeat-x 0 100%; text-decoration: none;  }
+#head .menu li a:hover { background: url(/apps/gismeteo/images/link-underline-hover.png) repeat-x 0 100%; }
+#head .menu li.active { background: white; color: black; }
+#head .menu li.active a { color: black; background: none; }
+
+#content .main { overflow: hidden; }
+#content .main .props1 { width: 465px; float: left; }
+#content .main .weather-block-cell .weather-block-cnt { margin: 8px 0 0 20px; position: relative;}
+#content .main .weather-block-cell .weather-block-cnt .cnt-gap { 
+	width: 15px; height: 8px; position: absolute; z-index: 2;
+	background: url(/apps/gismeteo/images/cnt-corner.png) no-repeat;
+	top: -8px; right: 13px;
+}
+
+
+
+
+fieldset.props {
+	padding: 8px 0px 12px 16px; margin-bottom: 20px;
+	background: url(/apps/gismeteo/images/fieldset-bg.png) repeat-x;
+	border: 1px solid #c6d6e2;
+}
+
+fieldset.props .cb { vertical-align: -1px; }
+fieldset.props legend { padding: 0 5px; margin-left: -2px; font-weight: bold; }
+}
+
+.props1 .icons { display: inline-block; }
+.props1 .icons fieldset { float: left; min-width: 180px;}
+.props1 .icons fieldset.last{ margin-left: 29px; width: 220px;}
+
+fieldset.props ul li { margin-bottom: 5px; margin-right: 15px;}
+fieldset.props ul.column { float: left; min-width: 100px;}
+fieldset.props ul.column-long { float: left; min-width: 210px;}
+
+fieldset.props { position: relative; }
+fieldset.props input.info { color: #000; }
+fieldset.props table { border-collapse: separate;  }
+fieldset.props table td { vertical-align: top; }
+fieldset.props table td.cell1 input { width: 305px; }
+fieldset.props table td.cell1 select { width: 310px; }
+fieldset.props table .quick-search { padding-bottom: 10px; }
+
+fieldset.props .multiselect { padding-left: 35px; }
+fieldset.props .multiselect select { margin-top: 1px; width: 335px; }
+fieldset.props .row { margin-bottom: 10px; }
+fieldset.props .cell-last .row { margin: 0 0 5px 20px; }
+fieldset.props .cell-buttons { width: 102px; text-align: center; padding-left: 20px;}
+fieldset.props .add-button { vertical-align: bottom }
+fieldset.props .cell-last .row-bottom { position: absolute; bottom: 11px; padding-left: 20px; }
+fieldset.props .row-last { margin-bottom: 0; }
+fieldset.props .cell-last button { width: 105px; text-align: left; padding-left: 20px; }
+fieldset.location { width: 953px; }
+
+
+.weather-block-cnt {border: 1px solid #b2b2b2; padding: 2px; float: left; border-radius: 5px;}
+.weather-block { 
+	width: 480px; font-family: Arial, serif; font-size: 12px;
+	border-radius: 3px; position: relative;
+}
+
+.backgroundImg {	background: white url(/apps/gismeteo/images/w-block-bright-bg.png) repeat-x; }
+
+.weather-block .content { border-radius: 3px; position: relative; }
+
+.border-none {
+	border-radius: 0;
+	border: none;
+	padding: 0px;
+}
+
+.weather-block a.refresh {
+	position: absolute; top: 10px; left: 10px; text-decoration: none;
+	text-align: center; color: #5c758d; font-size: 0.833em; line-height: 1em;
+	background: url(/apps/gismeteo/images/icon-refresh.png) no-repeat 50% 0; padding-top: 18px; 
+	z-index: 1001;
+	min-width: 60px;
+	min-height: 16px;
+}
+.weather-block a:hover.refresh { background-position: 50% -60px; color: #cc0000; }
+/*.weather-block a:hover.refresh { border: 1px solid #6f90b0; top: 5px; left: 5px; padding: 4px; border-radius: 3px; }*/
+.weather-block a.options { 
+	position: absolute; bottom: 6px; right: 10px; width: 20px; height: 20px; 
+	background: url(/apps/gismeteo/images/icon-options.png) no-repeat 50% 0;
+}
+/*.weather-block a:hover.options { border: 1px solid #6f90b0; bottom: 4px; right: 5px; padding: 4px 4px 0px 4px; border-radius: 3px; }*/
+.weather-block a:hover.options { background-position: 50% -30px; color: #cc0000; }
+.weather-block a.close { 
+	position: absolute; right: 10px; top: 10px;
+	background: url(/apps/gismeteo/images/icon-close.png) no-repeat 50% 0; height: 18px; width: 16px;
+	z-index: 1001
+}
+.weather-block a:hover.close { background-position: 50% -60px; color: #cc0000; }
+/*.weather-block a:hover.close { border: 1px solid #6f90b0; top: 3px; right: 3px; padding: 6px 6px 1px 6px; border-radius: 3px; }*/
+
+.weather-block .menu { padding: 7px 80px 0 80px; text-align: center; position:relative; z-index: 1000 }
+.weather-block .menu li { display: inline-block; margin: 1px 0px; padding: 0 8px; border-radius: 5px; }
+.weather-block .menu li a { text-decoration: none; color: #336699; border-bottom: 1px dashed #336699; }
+.weather-block .menu li a:hover { color: #cc0000; border-bottom: 1px dashed #cc0000; }
+.weather-block .menu li.active { background: #0967c4; color: white; padding: 0 8px; font-weight: bold;  }
+.weather-block .menu li.active a { color: white; border: none; }
+
+.weather-block .today { position:relative; z-index: 1000;}
+.weather-block .today .day-time { margin: 8px 0 2px; text-align: center; }
+.weather-block .today .details { color: #334455; }
+.weather-block .grad-top { width: 100%; height: 86px; position: absolute; border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px }
+.weather-block .menu-today { border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px }
+.weather-block .grad-bottom { width: 100%; height: 94px; position: absolute; z-index: 100 }
+.weather-block .info-top{ background-image: url(/apps/gismeteo/images/today-block-bright-grad.png); background-repeat: repeat-x;} 
+.weather-block .info-bottom { background-image: url(/apps/gismeteo/images/today-block-bright-grad2.png); background-repeat: repeat-x;} 
+.weather-block .today .details .temp { float: left; padding-top: 23px; width: 160px; text-align: right; }
+.weather-block .today .details .temp .main { font-size: 3.0458em; color: #1673d0; line-height: 1em; }
+.weather-block .today .details .temp .comform span.param { color: #1673d0; font-size: 1em; background: url(/apps/gismeteo/images/icon-comfort.png) no-repeat 0 50%; padding-left: 10px;}
+.weather-block .today .details .temp .comform span img { margin-right: 3px; vertical-align: -1px; }
+.weather-block .today .details .props { float: right; padding-top: 23px; width: 160px; }
+.weather-block .today .details .props li { margin-bottom: 2px; padding-left: 12px; }
+.weather-block .today .details .props li.pressure { background: url(/apps/gismeteo/images/icon-pressure-2.png) no-repeat 0 50%; }
+.weather-block .today .details .props li.humidity { background: url(/apps/gismeteo/images/icon-humidity-1.png) no-repeat 0 50%; }
+/*.weather-block .today .details .props li.wind { background: url(/apps/gismeteo/images/icon-wind-1.png) no-repeat 0 50%; }*/
+.weather-block .today .details .image { text-align: center; padding-top: 5px;  height: 90px;}
+.weather-block .today .conditions { margin: 5px 0 10px; text-align: center }
+
+.weather-block .forecast { padding-bottom: 2px; border-radius: 0 0 3px 3px; position: relative; z-index: 1001; min-height: 135px;}
+.weather-block .forecast fieldset {
+	padding: 0; margin: 0;
+	border: 1px solid #d5d9dc; border-radius: 3px;
+}
+.weather-block .forecast fieldset legend {
+	color: #334455; 
+	font-size: 0.917em; 
+	font-weight: normal;
+	margin: 0px auto;
+	padding: 0 3px;
+}
+.weather-block .forecast fieldset .info {
+	width: 118px; margin-top: -7px; padding-top: 8px;
+	background: white url(/apps/gismeteo/images/info-block-bright-dark-bg.png) repeat-x;
+	background: #bdd9f2 url(/apps/gismeteo/images/info-block-bright-grad.png) repeat-x;
+	border-radius: 3px;  
+}
+.weather-block .forecast fieldset .info-med { background-color: #cfe8fd; }
+.weather-block .forecast fieldset .info-light { background-color: white; }
+
+.weather-block .forecast fieldset .info .daytime { margin: 3px 0 15px 0; text-align: center; }
+.weather-block .forecast fieldset .info .temp { overflow: hidden; margin-left: 12px; height: 60px;}
+.weather-block .forecast fieldset .info .temp .main { color: #1673d0; font-size: 1.6667em; line-height: 1.1em; margin-right: 70px; padding-top: 4px; text-align: right }
+.weather-block .forecast fieldset .info .temp .comfort { color: #1673d0; margin: 5px 0 0; margin-right: 70px; text-align: right}
+.weather-block .forecast fieldset .info .temp .comfort span { background: url(/apps/gismeteo/images/icon-comfort.png) no-repeat 0 50%; padding-left: 10px;}
+.weather-block .forecast fieldset .info .temp .comfort img { vertical-align: -2px; }
+.weather-block .forecast fieldset .info .temp .img { float: right; width: 62px; }
+.weather-block .forecast fieldset .info .conditions { margin: 0 0 10px 0; text-align: center; vertical-align: middle;}
+.weather-block .forecast fieldset .props { margin: 0 0 0 12px; font-size: 12px; color: #334455; line-height: 1em; display: none; }
+.weather-block .forecast fieldset .props li { margin-bottom: 8px; padding-left: 12px; }
+.weather-block .forecast fieldset .props li.strong { font-style: italic; }
+
+.weather-block .forecast fieldset.today { float: left; margin-right: 2px; }
+.weather-block .forecast fieldset.today .info { float: left; border-right: 1px solid white; width: 118px;}
+.weather-block .forecast fieldset.today .info-last { border-right: 0px; }
+.weather-block .forecast fieldset.today .info-last_4 { width: 119px; }
+.weather-block .forecast fieldset.tomorrow {  }
+.weather-block .forecast fieldset.tomorrow .info { float: left; border-right: 1px solid white; width: 118px; }
+.weather-block .forecast fieldset.tomorrow .info-last { border-right: 0px; }
+.weather-block .forecast fieldset.tomorrow .info-last_4 { width: 121px; }
+
+.weather-block .foot { overflow: hidden; padding: 5px 0 0 7px; background: white; min-width: 460px;}
+.weather-block .foot a.logo { float: left; margin-right: 20px; text-decoration: none; }
+.weather-block .foot a.logo span { position: absolute; right: 383px; bottom: 0px; color: #000; font-size: 9px;}
+.weather-block .foot-menu li { float: left; margin-right: 12px; line-height: 28px; }
+.weather-block .foot-menu li a { color: #0971b8; }
+.weather-block .foot-menu li a:hover { color: #cc0000; }
+
+.weather-block-dark {
+	background: url(/apps/gismeteo/images/w-block-dark-bg.png) repeat-x scroll 0 0 transparent;
+	color: white;
+}
+
+.weather-block-dark a.refresh { color: #889eba; background-position: 50% -120px; width: 50px }
+.weather-block-dark a:hover.refresh { background-position: 50% -180px; color: #ff0000; }
+.weather-block-dark .menu li a { color: #889eba; border-color: #889eba; }
+.weather-block-dark a.close { color: #889eba; background-position: 50% -120px; }
+.weather-block-dark a:hover.close { background-position: 50% -180px; color: #ff0000; }
+.weather-block-dark .menu li a { color: #889eba; border-color: #889eba; }
+.weather-block-dark .menu li.active { background: #fff url(/apps/gismeteo/images/menu-bg-dark.png) repeat-x; color: black; }
+.weather-block-dark .menu li.active a { color: black; }
+
+.weather-block-dark .today .details { color: #aabbcc; }
+.weather-block-dark .info-top{ background-image: url(/apps/gismeteo/images/today-block-dark-grad.png); background-repeat: repeat-x;} 
+.weather-block-dark .info-bottom { background-image: url(/apps/gismeteo/images/today-block-dark-grad2.png); background-repeat: repeat-x;} 
+
+.weather-block-dark .today .details .temp .comform span.param { color: #0066cc; font-size: 1em;  background: url(/apps/gismeteo/images/icon-comfort-dark.png) no-repeat 0 50%; padding-left: 10px;}
+.weather-block-dark .forecast { background: #000; }
+.weather-block-dark .forecast fieldset { border-color: #222222; }
+.weather-block-dark .forecast fieldset legend { color: #aabbcc; }
+.weather-block-dark .forecast fieldset .info { background: black url(/apps/gismeteo/images/info-block-dark-dark-bg.png); }
+.weather-block-dark .forecast fieldset .info { border-radius: 3px;}
+
+.weather-block-dark .forecast fieldset .info .temp .comfort span { background-image: url(/apps/gismeteo/images/icon-comfort-dark.png); }*/
+.weather-block-dark .forecast fieldset .info-med { background-color: #18202c; }
+.weather-block-dark .forecast fieldset .info-light { background-color: #231b0b; }
+
+.weather-block-dark .forecast fieldset.today .info { border-right-color: black; }
+.weather-block-dark .forecast fieldset.tomorrow .info { border-right-color: black; }
+.weather-block-dark .forecast fieldset .props { color: #aabbcc; }
+
+button.add span { background: url(/apps/gismeteo/images/icon-btn-right.png) no-repeat 100% 50%; padding: 0 15px 0 4px; }
+button.add-disabled span { background: url(/apps/gismeteo/images/icon-btn-right-dis.png) no-repeat 100% 50%; padding-right: 15px; }
+button.up span { background: url(/apps/gismeteo/images/icon-btn-up.png) no-repeat 0 50%; padding-left: 15px; }
+button.down span { background: url(/apps/gismeteo/images/icon-btn-down.png) no-repeat 0 50%; padding-left: 15px; }
+button.delete span { background: url(/apps/gismeteo/images/icon-btn-delete.png) no-repeat 0 50%; padding-left: 15px; }
+
+.preloader { width: 48px; height: 48px; top: 130px; left: 230px; position: absolute; z-index: 1003; 	visibility: hidden;}
+
+.news { width: auto; height: 344px; border: 1px solid #b2b2b2; margin-top: 30px; padding: 2px; border-radius: 5px;  background-color: #fff; display: none;  position: relative;	z-index: 1002 }
+.news .contents {	color: #000000; height:  inherit;  overflow:auto;}
+.news .contents .item { margin: 2px 2px;	display: inline-block; width: 453px;}
+.news .contents .pict { padding-right: 5px; }
+.news .contents .text { overflow: hidden; vertical-align: top;}
+
+/* BRIGHT STYLES */
+.preloader.bright { background: url(/apps/gismeteo/images/preloader_bright.gif) no-repeat;}
+.weather-block .forecast fieldset .info1 .temp { background: url(/apps/gismeteo/images/icon-mid-sun-snow.png) no-repeat 43px 0px; }
+.weather-block .forecast fieldset .info1 .props li.pressure { background: url(/apps/gismeteo/images/icon-pressure-2.png) no-repeat 0 50%; }
+.weather-block .forecast fieldset .info1 .props li.humidity { background: url(/apps/gismeteo/images/icon-humidity-1.png) no-repeat 0 50%; }
+
+
+/* DARK STYLES */
+
+.weather-block-dark .today .details .temp .main, 
+.weather-block-dark .today .details .temp .comform span.param,
+.weather-block-dark .forecast fieldset .info .temp .main,
+.weather-block-dark .forecast fieldset .info .temp .comfort
+{color: #fff;}
+
+.preloader.dark { background: url(/apps/gismeteo/images/preloader_dark.gif) no-repeat;}
+.weather-block-dark .today .details .props li.pressure { background: url(/apps/gismeteo/images/icon-pressure-1-dark.png) no-repeat 0 50%; }
+.weather-block-dark .today .details .props li.humidity { background: url(/apps/gismeteo/images/icon-humidity-1-dark.png) no-repeat 0 50%; }
+
+.weather-block-dark .forecast fieldset .info-snow .temp { background: url(/apps/gismeteo/images/icon-mid-snow.png) no-repeat 43px 0px; }
+.weather-block-dark .forecast fieldset .info-snow .props li.pressure { background: url(/apps/gismeteo/images/icon-pressure-2-dark.png) no-repeat 0 50%; }
+.weather-block-dark .forecast fieldset .info-snow .props li.humidity { background: url(/apps/gismeteo/images/icon-humidity-1-dark.png) no-repeat 0 50%; }
+/*.weather-block-dark .forecast fieldset .info-snow .props li.wind { background: url(/apps/gismeteo/images/icon-wind-2-dark.png) no-repeat 0 50%; }*/
+
+.weather-block-dark .forecast fieldset .info-moon .temp { background: url(/apps/gismeteo/images/icon-mid-moon.png) no-repeat 43px 0px; }
+.weather-block-dark .forecast fieldset .info-moon .props li.pressure { background: url(/apps/gismeteo/images/icon-pressure-2-dark.png) no-repeat 0 50%; }
+.weather-block-dark .forecast fieldset .info-moon .props li.humidity { background: url(/apps/gismeteo/images/icon-humidity-1-dark.png) no-repeat 0 50%; }
+/*.weather-block-dark .forecast fieldset .info-moon .props li.wind { background: url(/apps/gismeteo/images/icon-wind-2-dark.png) no-repeat 0 50%; }*/
+
+.weather-block-dark .forecast fieldset .info-clouds .temp { background: url(/apps/gismeteo/images/icon-mid-clouds.png) no-repeat 43px 0px; }
+.weather-block-dark .forecast fieldset .info-clouds .props li.pressure { background: url(/apps/gismeteo/images/icon-pressure-1-dark.png) no-repeat 0 50%; }
+.weather-block-dark .forecast fieldset .info-clouds .props li.humidity { background: url(/apps/gismeteo/images/icon-humidity-1-dark.png) no-repeat 0 50%; }
+/*.weather-block-dark .forecast fieldset .info-clouds .props li.wind { background: url(/apps/gismeteo/images/icon-wind-1-dark.png) no-repeat 0 50%; }*/
+
+
+.weather-block-dark .forecast fieldset .info-sun .temp { background: url(/apps/gismeteo/images/icon-mid-sun.png) no-repeat 43px 0px; }
+/*.weather-block-dark .forecast fieldset .info-sun .temp .main { color: #e38424; }
+.weather-block-dark .forecast fieldset .info-sun .temp .comfort { color: #e38424; }*/
+.weather-block-dark .forecast fieldset .info-sun .temp .main { color: #fff; }
+.weather-block-dark .forecast fieldset .info-sun .temp .comfort { color: #fff; }
+.weather-block-dark .forecast fieldset .info-sun .props li.pressure { background: url(/apps/gismeteo/images/icon-pressure-1-dark.png) no-repeat 0 50%; }
+.weather-block-dark .forecast fieldset .info-sun .props li.humidity { background: url(/apps/gismeteo/images/icon-humidity-1-dark.png) no-repeat 0 50%; }
+/*.weather-block-dark .forecast fieldset .info-sun .props li.wind { background: url(/apps/gismeteo/images/icon-wind-1-dark.png) no-repeat 0 50%; }*/
+
+.ui-menu {
+	width: 303px !important;
+	margin-top: 112px !important;
+	border-radius: 0 0 6px 6px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.ui-corner-all {
+	border: 0;
+	border-radius: 0;
+}
+
+.ui-menu-item .city {
+	text-align: left;
+	padding: 0;
+	padding-left: 44px !important;
+}
+
+.ui-menu-item .dc {
+	color: #bdbdbd;
+	font-size: 12px;
+	line-height: 12px;
+	padding-left: 44px !important;
+}
+
+.ui-menu-item .city, .ui-menu-item a {
+	font-size: 13px;
+}
+
+.ui-menu-item .ui-state-hover {
+	color: #fff;
+	background: url(/apps/gismeteo/images/hover.bg.png) repeat-x;
+	border: none;
+}
+
+.ui-menu-item .ui-state-hover .dc {
+	color: #fff;
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: 0;
+}
+
+.icon {
+	width: 21px;
+	height: 17px;
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 7px;
+	background: url(/apps/gismeteo/images/search_type_icons.png) no-repeat;
+}
+
+.icon.A {
+	background-position: 0 -15px;
+}
+
+.ui-state-hover .icon {
+		background-position: -24px 0px;
+} 
+
+.ui-state-hover .icon.A {
+		background-position: -24px -15px;
+}
+
+.x {
+	width: 16px;
+	height: 16px;
+	background: url(/apps/gismeteo/images/search_type_icons.png) -45px -16px no-repeat;
+	margin-top: -22px;
+	margin-left: 293px;
+	position: absolute;
+	cursor: pointer;
+	display: none;				
+}
+
+.o {
+	background: url(/apps/gismeteo/images/o.gif) 0px 2px no-repeat !important;	
+}
+
+span.tsp { display: inline; display: inline-block; display: -moz-inline-box; width: 0.12em; overflow: hidden; text-decoration: inherit }
+
+.district-country {
+	font-size: 0.9em;
+	color: #838383;	
+}
+
+.message {
+	width: 317px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: -22px;
+	display: none;
+}
+
+.weather-block .visibleBlock {display: block;}
+.weather-block .hiddenBlock {display: none;}
+
+.forecast_content,
+.news_content,
+.forecast_foot_menu,
+.news_foot_menu {
+	display: none;
+}
+
+.hide .weather-block .content {
+	visibility: hidden;	
+}
+
+.show .weather-block .content {
+	visibility: visible;
+}
+
+.hide .preloader {
+	visibility: visible;	
+}

@@ -1,0 +1,77 @@
+body {
+    width: 400px;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li:first-child {
+    
+}
+
+ul li {
+    width: 100%;
+}
+
+ul li:hover {
+    /*background-color: steelblue;
+    color: white;
+    cursor: pointer;*/
+}
+
+img {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin: 2px 0 0 4px;
+}
+
+ul li a > div {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 16px;
+    padding:10px;
+    height: 19px;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-apps {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+}
+
+.delete {
+    width: 30px;
+    height: 20px; 
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    color: steelblue;
+    cursor: pointer;
+}
+
+ul li .delete:hover {
+    color: red;
+}
+
+a {
+    color: steelblue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+a:focus {
+    outline: 0;
+}
+
+
+
