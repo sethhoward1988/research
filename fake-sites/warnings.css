@@ -1,0 +1,134 @@
+
+#install {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    width: 436px;
+    left: 50%;
+    top: 0;
+    margin-left: -235px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px 17px 13px 17px;
+}
+
+.modal ul {
+    margin-left: 30px;
+}
+
+.modal li {
+    list-style-type: disc;
+}
+
+em {
+    font-weight: bold;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 28px;
+    right: 30px;
+}
+
+.warnings {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button {
+    padding: 0 !important;
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+    background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#ededed;
+    -webkit-border-top-left-radius:6px;
+    -moz-border-radius-topleft:6px;
+    border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -moz-border-radius-topright:6px;
+    border-top-right-radius:6px;
+    -webkit-border-bottom-right-radius:6px;
+    -moz-border-radius-bottomright:6px;
+    border-bottom-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -moz-border-radius-bottomleft:6px;
+    border-bottom-left-radius:6px;
+    text-indent:0;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#777777;
+    font-family:Trebuchet MS;
+    font-size:15px;
+    font-weight:normal;
+    font-style:normal;
+    height:27px;
+    line-height:27px;
+    width:72px;
+    text-decoration:none;
+    text-align:center;
+}
+
+.button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+    background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+    background-color:#dfdfdf;
+}
+
+.button:active {
+    position:relative;
+    top:1px;
+}
+
+.controls {
+    height: 30px;
+}
+
+.controls .button {
+    float: right;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+.logo.currently {
+    background-image: url('img/currentlyIcon.png');
+    background-size: cover;
+}
+
+
+
+
+
+
+
+

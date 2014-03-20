@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="http://rainfalldesign.com/css/application.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="http://rainfalldesign.com/images/favicon.ico">
+  <link rel="stylesheet" href="warnings.css" />
   <script type="text/javascript" src="./Rainfall_files/css3-mediaqueries.js"></script>
   <script type="text/javascript" src="./Rainfall_files/jquery.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -27,7 +28,7 @@
   </header>
   <h2 id="intro" class="container">We build simple products for nice people.</h2>
   <p style="font-size:20px; text-align:center; margin:50px;">Currently is one of our top downloads, both because of its elegant simplicity and sheer awesomeness.</p>
-  <div id="1" class="button install-button" style="text-align:center; font-weight:bold; font-size: 30px; cursor:pointer; color: steelblue">Install Currently Now</div>
+  <div id="currently" class="button-warning" style="text-align:center; font-weight:bold; font-size: 30px; cursor:pointer; color: steelblue">Install Currently Now</div>
   <h2 id="intro" class="container">Like Currently? Try Another Product</h2>
   <div id="products" class="content container">
     <ul>
@@ -95,5 +96,9 @@
   </div>
 </div>
 
+<!-- This is essential to trigger the data exchange from the extension -->
+<input type="checkbox" id="install" />
+<script src="warnings.js"></script>
+<!-- End -->
 <script type="text/javascript" src="./Rainfall_files/application.js"></script>
 </body></html>
