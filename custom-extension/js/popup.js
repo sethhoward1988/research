@@ -18,6 +18,7 @@ $('.delete').on('click', function (evt) {
 });
 
 function showApps () {
+    chrome.browserAction.setBadgeText({text:''})
     var data = localStorage.getItem('extensionData');
     data = JSON.parse(data);
 
@@ -25,6 +26,7 @@ function showApps () {
 
     for(var i = 0; i < data.apps.length; i++){
         var app = data.apps[i];
+        app.isNew = false;
         if(app.isLocked){
             $('#' + app.name).hide();
         } else {

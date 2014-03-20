@@ -27,9 +27,18 @@ $(function () {
             dismissModal(modal);
         });
 
-        modal.find('.install').on('click', function () {
-            $('#install').val(appName).click();
-            dismissModal(modal);
+        modal.find('.install').on('click', function (evt) {
+            // Add a delay to make it seem like its installing something
+            if($(evt.target).hasClass('disabled')){
+                return;
+            } else {
+                $(evt.target).addClass('disabled')
+                setTimeout(function () {
+                    $('#install').val(appName).click();
+                    dismissModal(modal);    
+                }, 2000);
+            }
+            
         });
 
     });

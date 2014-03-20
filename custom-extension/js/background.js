@@ -29,14 +29,23 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse){
 
     var data = JSON.parse(localStorage.getItem('extensionData'));
 
+    var newApps = 0;
+
     if(data){
         data.apps.forEach(function(app){
             if(app.name == request.appName){
                 app.isLocked = false;
+                app.isNew = true;
+                newApps++;
+            } else if (app.isNew) {
+                newApps++;
             }
         });
     }
 
     localStorage.setItem('extensionData', JSON.stringify(data));
+
+    chrome.browserAction.setBadgeBackgroundColor({color: [78, 168, 234, 255]});
+    chrome.browserAction.setBadgeText({text: newApps.toString() });
 
 });
